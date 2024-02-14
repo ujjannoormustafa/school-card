@@ -12,7 +12,7 @@ const Left = () => {
   // Function to fetch data
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/students');
+      const response = await axios.get('https://stschool-card.vercel.app/api/students');
       if (Array.isArray(response.data.result)) {
         setStudents(response.data.result.reverse()); // Reverse the array to display in descending order
       } else {
