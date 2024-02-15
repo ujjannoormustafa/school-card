@@ -45,13 +45,13 @@ const Left = () => {
           {students.map((student, index) => (
             <div
               key={index}
-              className="bg-[#43739e] px-8 flex justify-center py-10 shadow-[0_2px_15px_-6px_rgba(0,0,0,0.2)] w-full max-w-sm rounded-2xl font-[sans-serif] overflow-hidden mx-auto mt-4"
+              className="bg-[#43739e] px-2 lg:px-8 flex justify-center py-10 shadow-[0_2px_15px_-6px_rgba(0,0,0,0.2)] w-full max-w-sm rounded-2xl font-[sans-serif] overflow-hidden mx-auto mt-4"
               style={{ backgroundColor: getRandomColor() }}
             >
               <div className="flex flex-col items-center">
                 <img
                   src={student.imageUrl}
-                  className="w-60 h-60  rounded-full border-4 border-white"
+                  className=" w-[20vw] h-[20vh] rounded-full lg:border-4 border-white"
                   alt={student.name}
                   onError={handleImageError}
                 />
