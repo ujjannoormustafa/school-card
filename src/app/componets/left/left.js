@@ -51,7 +51,7 @@ const Left = () => {
               <div className="flex flex-col items-center">
                 <img
                   src={student.imageUrl}
-                  className=" w-[20vw] h-[20vh] rounded-full lg:border-4 border-white"
+                  className=" w-[145px] custom-width h-[145px] rounded-full lg:border-4 border-white"
                   alt={student.name}
                   onError={handleImageError}
                 />

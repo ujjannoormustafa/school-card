@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
         <div className='bg-red-50'>
-        <h1 className='text-center text-5xl mb-4 py-6 font-bold font-mono text-gray-800'>We are Saint Theresa's Students</h1>
+        <h1 className='text-center text-5xl mb-4 py-6 font-bold cursor-pointer font-mono text-gray-800'>We are Saint Theresa's Students</h1>
 
         <div onClick={() => setOpen(true) }  class="block py-4 text-xl text-white w-60 text-center mx-auto bg-gray-800 px-7 hover:bg-gray-700 rounded-xl">
         Add Your Info
