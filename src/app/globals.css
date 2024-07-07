@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* 
 @media only screen and (max-width: 298px) {
     .custom-width{
         width: 80px;
         height: 80px;
     }
   }
-  
+   */

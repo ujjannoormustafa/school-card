@@ -89,22 +89,22 @@ const Nav = () => {
   };
 
   return (
-    <div className="font-[sans-serif] text-[#333] relative">
-      <div className="relative m-4">
+    <div className="font-[sans-serif] w-[1240px]  text-[#333] relative">
+      <div className="relative w-full m-4">
         <form onSubmit={handleSubmit} className="bg-white max-w-xl w-full mx-auto shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] p-6 rounded-md">
-          <div className="mb-12">
-            <h3 className="text-3xl font-extrabold text-center">Add your Info Here</h3>
+          <div className="mb-3">
+            <h3 className="text-xl  text-center">Add your Items</h3>
           </div>
           <div>
-            <label className="text-xs block mb-2">Full Name</label>
+            <label className="text-xs block mb-2">Item Name</label>
             <div className="relative flex items-center">
-              <input name="name" type="text" required value={formData.name} onChange={handleChange} className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-blue-500 px-2 py-3 outline-none" placeholder="Enter name" />
+              <input name="name" type="text" required value={formData.name} onChange={handleChange} className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-blue-500 px-2 py-3 outline-none" placeholder="Item name" />
             </div>
           </div>
           <div className="mt-10">
-            <label className="text-xs block mb-2">Detail</label>
+            <label className="text-xs block mb-2">Price</label>
             <div className="relative flex items-center">
-              <input name="detail" type="text" required value={formData.detail} onChange={handleChange} className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-blue-500 px-2 py-3 outline-none" placeholder="Enter detail" />
+              <input name="detail" type="text" required value={formData.detail} onChange={handleChange} className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-blue-500 px-2 py-3 outline-none" placeholder="Price" />
             </div>
           </div>
 
