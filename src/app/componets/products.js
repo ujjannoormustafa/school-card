@@ -1,6 +1,5 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
-
 import axios from 'axios';  // Import Axios
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,8 +15,9 @@ const Products = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://stschool-card.vercel.app/api/students');  // Use axios.get instead of fetch
-                setItems(response.data);  // Axios response.data is the parsed JSON data
+                const response = await axios.get('https://stschool-card.vercel.app/api/students');  // Use the full URL for axios.get
+                console.log(response.data);  // Log the response to check the structure
+                setItems(response.data.result);  // Set items to the correct part of the response
             } catch (error) {
                 console.error('Error fetching data:', error);
             } finally {
@@ -41,10 +41,7 @@ const Products = () => {
                 ) : (
                     items.map((item, index) => (
                         <div key={index} data-aos="fade-up" className="card">
-                            <img
-                                src={item.image}
-                                alt=""
-                            />
+                            <img src={item.image} alt="" />
                             <div className="card-body">
                                 <div className="row">
                                     <div className="card-title">
