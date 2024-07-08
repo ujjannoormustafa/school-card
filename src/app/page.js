@@ -4,6 +4,7 @@ import Left from "./componets/left/left";
 import { Button, Modal } from 'antd';
 import Nav from './componets/navbar/nav';
 import Image from "next/image"
+import Products from './componets/products';
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -76,7 +77,7 @@ export default function Home() {
         {/* <div onClick={() => setOpen(true) }  class="block py-4 text-xl text-white w-60 text-center mx-auto bg-gray-800 px-7 hover:bg-gray-700 rounded-xl">
         Add Your Info
         </div> */}
-        <Nav/>
+        {/* <Nav/> */}
        {/* <Modal
         centered
         open={open}
@@ -91,6 +92,8 @@ export default function Home() {
       </Modal> */}
 
     {/* <Left/> */}
+
+    <Products/>
     
    <p className='text-center text-sm text-gray-400 font-mono'>
       created by ❤️ Foodie
